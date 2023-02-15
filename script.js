@@ -1,6 +1,9 @@
-let fetched = fetch("https://nikeedev.github.io/welcome.txt").then(response => {return response})
+let fetched = fetch("https://nikeedev.github.io/welcome.txt").then(response => {return response});
 
-fetched.then(response => {
-    return response.text()
-})
+let welcome = fetched.then(response => {
+    return response.text();
+});
 
+welcome.then(response => {
+    console.log(String.raw`${response}`)
+});
