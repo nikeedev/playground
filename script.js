@@ -9,7 +9,7 @@ token_text.innerText = token;
 token_text.style.display = "none";
 token_text.style.color = "cornflowerblue";
 
-let button = document.createElement("a");
+let button = document.createElement("span");
 button.style.textDecoration = "underline";
 button.innerText = "Show token";
 button.style.color = "cornflowerblue";
